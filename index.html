@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="build/main.bundle.js"></script>
+    <title>WebTechnology-HW3</title>
+</head>
+<body>
+<div class="search_box">
+    <div class="search_icon"><i class="fa fa-search"> Search</i></div>
+    <div class="search_type">
+        <table class="search_area">
+            <tr>
+                <th class="search_header">Name : </th>
+                <td><input type="text" id="beer_name" class="search_input"></td>
+            </tr>
+            <tr>
+                <th class="search_header">Malt : </th>
+                <td><input type="text" id="malt" class="search_input"></td>
+            </tr>
+            <tr>
+                <th class="search_header">Food : </th>
+                <td><input type="text" id="food" class="search_input"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="button_search" align="center ">
+        <button id="btn_search" class="btn_search" name="btnSearch">Search</button>
+    </div>
+</div>
+<div id="table_result"></div>
+</body>
+</html>
