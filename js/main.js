@@ -27,6 +27,7 @@ function createTable() {
     var txt = "<table border='1px' style='border-collapse: collapse; width: 100%'>";
 
     txt += "<tr style='background-color: black'>";
+    txt += "<th>" + "Image" + "</th>";
     txt += "<th>" + "Beer name" + "</th>";
     txt += "<th>" + "ABV" + "</th>";
     txt += "<th>" + "Food pairing" + "</th>";
@@ -39,6 +40,7 @@ function createTable() {
     for (var x = 0; x < obj.length; x++) {
         console.log(obj[x]);
         txt += "<tr>";
+        txt += "<td class='cell_padding'>" + "<img src='" + obj[x].image_url + "' style='width: 50px; padding: 10px' />" + "</td>";
         txt += "<td>" + obj[x].name + "</td>";
         txt += "<td>" + obj[x].abv + "</td>";
         txt += "<td>" + obj[x].food_pairing + "</td>";
